@@ -130,6 +130,47 @@ main{
 .quick-lis{
   color:rgb(114, 114, 114);
 }
+/* some fects design stars here */
+.some-fects{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(19, 19, 19);
+
+}
+/* some fects design ends here */
+.fact-card{
+ 
+   box-sizing: border-box;
+   border: 1px solid rgb(255, 144, 14);
+   border-radius: 8px;
+    max-width: 240px;
+    height: 240px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   
+}
+.fact-contianer{
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+    /* margin: 20px 220px 0 220px;  */
+   gap: 165px;
+  
+}
+.fact-number{
+  color: rgb(66, 66, 66);
+font-size: 2.8rem;
+font-weight: 600;
+margin: 10px 0 5px 0;
+}
+.fact-name{
+  color: rgb(114, 114, 114);
+
+ font-size: 20px;
+ font-weight: 600;
+}
+
 /* main section design ends here */
 
 
@@ -178,11 +219,31 @@ main{
     width: 100%;
     height: auto;
   }
+  .fact-contianer{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    
+  }
+  .somefects{
+    
+    text-align: center;
+  }
+  
 }
 
 /* responsive for medium device  */
 @media (min-width: 576px) and (max-width:992px){
   .team-activity{
     flex-direction: column;
+  }
+
+  .fact-contianer{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    
+  }
+  .somefects{
+    
+    text-align: center;
   }
 }
