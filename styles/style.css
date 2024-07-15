@@ -1,0 +1,147 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.work-sans-regular {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* reset and commom code here */
+.flex{
+  display: flex;
+}
+/* reset and commom code here */
+.header-class{
+max-width: 120rem;
+ height:82rem;
+ background: rgba(255, 144, 14, 0.1);
+ /* border: 2px solid red; */
+}
+.text-center{
+  text-align: center;
+}
+.desc{
+  color: rgb(114, 114, 114);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.explore-button{
+  width: 12rem;
+  height: 4rem;
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  color: white;
+  padding: 0.5rem;
+  margin-bottom: 1.8rem;
+
+
+}
+/* navbar-style start here */
+   .navbar{
+    width: 90rem;
+    /* height: 700px; */
+    /* border: 2px solid green; */
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+   }
+   .nav-item{
+      list-style-type: none;
+      margin-right: 30px;
+      color: rgb(66, 66, 66);
+      font-family: Work Sans;
+      font-size: 18px;
+      font-weight: 500;
+
+   }
+   .nav-item a{
+    text-decoration: none;
+   }
+   .G3{
+    color: rgb(19, 19, 19);
+  
+   font-size: 2.5rem;
+   font-weight: 700;
+   }
+/* navbar-style end here */
+/* navbar er brand info and image design */
+.brand-info{
+  width: 54rem;
+  margin: 0 auto;
+  /* border: 2px solid blue; */
+  
+  
+}
+.brand-heading{
+  color: rgb(19, 19, 19);
+  font-size: 3rem;
+  font-weight: 700;
+}
+.banner-image{
+  width: 90rem;
+  height: 43rem;
+  /* border: 2px solid brown; */
+  margin: 0 auto; 
+  border-radius: 8px;
+ 
+
+ background: url(group-three-modern-architects);
+}
+.banner-image img{
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 8px;
+  
+}
+/* navbar er brand info and image design */
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-item {
+    margin: 10px 0;
+    
+  }
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+  }
+ 
+  .brand-info {
+    width: 90%;
+  }
+  .brand-heading {
+    font-size: 2rem;
+  }
+  .desc {
+    font-size: 0.875rem;
+  }
+  .explore-button {
+    width: 10rem;
+    height: 3rem;
+  }
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+  .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+}
