@@ -40,6 +40,13 @@ max-width: 120rem;
 
 
 }
+main{
+ max-width: 1440px;
+  /* height: 1059px; */
+  border: 2px solid red;
+  margin: 0 auto;
+  margin-top: 85px;
+}
 /* navbar-style start here */
    .navbar{
     width: 90rem;
@@ -101,16 +108,43 @@ max-width: 120rem;
   
 }
 /* navbar er brand info and image design */
-
+/* main section design stars here */
+.team-activity{
+  align-items: center;
+}
+.images{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+.team-text{
+  margin-left: 73px;
+}
+.h3-class{
+  font-size: 45px;
+  font-weight: 700;
+}
+.features{
+ color: rgb(255, 144, 14);
+}
+.quick-lis{
+  color:rgb(114, 114, 114);
+}
+/* main section design ends here */
 
 
 
 
 
 @media (max-width: 576px) {
-  .navbar {
+  .navbar,.team-activity {
     width: 100%;
     flex-direction: column;
+  }
+  .images{
+   
+    grid-template-columns: repeat(1,1fr);
+    
   }
   .nav-item {
     margin: 10px 0;
@@ -143,5 +177,12 @@ max-width: 120rem;
   .banner-image img {
     width: 100%;
     height: auto;
+  }
+}
+
+/* responsive for medium device  */
+@media (min-width: 576px) and (max-width:992px){
+  .team-activity{
+    flex-direction: column;
   }
 }
